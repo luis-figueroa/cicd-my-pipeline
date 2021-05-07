@@ -87,7 +87,7 @@ Resources:
             Capabilities: CAPABILITY_IAM
             RoleArn: !GetAtt CloudformationRole.Arn
             StackName: !Ref ApplicationStackName
-            TemplatePath: !Sub "SourceCode::application.yaml"
+            TemplatePath: !Sub "SourceCode::template.yaml"
           RunOrder: 1
 
   # 'GithubWebhook' satisfies two requirements:
